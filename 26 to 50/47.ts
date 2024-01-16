@@ -37,6 +37,3 @@ const r5WithAsConst = acceptsValueWithObjectConstraint({
     input: "ashish"
 } as const)
 // ^? const r5: string
-
-
-
