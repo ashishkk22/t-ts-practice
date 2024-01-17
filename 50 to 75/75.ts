@@ -9,14 +9,13 @@ type GetParamKeys<TTranslation extends string> = TTranslation extends ""
 const translate = <
   TTranslations extends Record<string, string>,
   TKey extends keyof TTranslations,
-  TDynamicKEy = GetParamKeys<TTranslations[TKey]
+  TDynamicKEy = GetParamKeys<TTranslations[TKey]>
 >(
   translations: TTranslations,
   key: TKey,
-  ...args: TKey extends string
-    ? GetParamKeys<TTranslations[TKey]> extends [] ? []
-      : [dynamicArgs: Record<>, string>]
-      : []
+  ...args: TDynamicKEy extends string
+    ? [dynamicArgs: Record<TDynamicKEy, string>]
+    : []
 ) => {
   const translation = translations[key];
   const params = args[0] || {};
