@@ -8,4 +8,4 @@ const greeting = window.makeGreeting();
 
 console.log(greeting); // Output: Hello
 
-export {}
+export {};
