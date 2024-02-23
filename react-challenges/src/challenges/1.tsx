@@ -15,24 +15,21 @@ import React from "react";
  * some required props ?
  */
 
-declare global {
-  // eslint-disable-next-line @typescript-eslint/no-namespace
-  namespace JSX {
-    interface IntrinsicElements {
-      "custom-element": {
-        children?: React.ReactNode;
-      };
-    }
-  }
-}
+// declare global {
+//   // eslint-disable-next-line @typescript-eslint/no-namespace
+//   namespace JSX {
+//     interface IntrinsicElements {
+//       "custom-element": {
+//         children?: React.ReactNode;
+//       };
+//     }
+//   }
+// }
 
-const element = <custom-element>Hello World</custom-element>;
-
+// const element = <custom-element>Hello World</custom-element>;
 
 const Example1 = () => {
-  return (
-    <div>{element}</div>
-  )
-}
+  // return <div>{element}</div>;
+};
 
-export default Example1
+export default Example1;
