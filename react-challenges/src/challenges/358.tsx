@@ -12,13 +12,13 @@
  */
 
 declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      something: {
-        id: string;
-      };
-    }
-  }
+  // namespace JSX {
+  //   interface IntrinsicElements {
+  //     something: {
+  //       id: string;
+  //     };
+  //   }
+  // }
 }
 
 //or it is also available in the react
